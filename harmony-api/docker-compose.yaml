@@ -1,0 +1,8 @@
+version: '3'
+services:
+  harmony-api:
+    container_name: harmony-api
+    image: turlvo/harmony-api:latest
+    restart: always
+    network_mode: host
+    entrypoint: ["home/harmony-api/harmony-api/script/server"]

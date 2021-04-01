@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gh-connector:
+    container_name: gh-connector
+    image: fison67/gh-connector:0.0.5
+    restart: always
+    network_mode: host
+    volumes:
+      - ./config:/config
